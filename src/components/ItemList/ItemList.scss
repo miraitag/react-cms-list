@@ -1,0 +1,18 @@
+.item-list__input {
+    transition: background-color 350ms;
+    will-change: background-color;
+    &:checked {
+        + label {
+            background-color: rgb(4, 115, 219);
+            .item-list__name,
+            .item-list__specialities,
+            .item-list__dayrate,
+            .item-list__availability   {
+                color: white;
+            }
+            .item-list__specialities {
+                background-color: rgb(4, 132, 252);
+            }
+        }
+    }
+}
