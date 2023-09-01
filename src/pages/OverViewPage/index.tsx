@@ -56,7 +56,7 @@ export const OverViewPage = () => {
 					text="Lorem ipsum dolor sit amet consectetur adipisicing elit. In beatae quis delectus ab commodi totam officiis quos dolores minus consequuntur minima ut, et consectetur, maiores odio necessitatibus illo, eius voluptatibus."
 				/>
 				<section className="main-wrapper__list w-full pb-5 rounded-lg shadow-2xl overflow-y-scroll">
-					<div className="flex px-5 py-5 sticky top-0 bg-white shadow-md">
+					<div className="flex px-5 py-5 sticky top-0 bg-white shadow-md z-[1]">
 						<Search onOpenClickFilter={handleOnOpenClickFilter} />
 					</div>
 
