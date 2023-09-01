@@ -7,7 +7,7 @@ const initialState: IUser[] = [];
 
 export const userAsync = createAsyncThunk(
   "users/fetch",
-  async (args, { dispatch }) => {
+  async (_, { dispatch }) => {
     dispatch(show());
     try {
       const response: IUser[] = await api.get("/users");

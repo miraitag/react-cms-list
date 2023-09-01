@@ -14,9 +14,9 @@ export const SearchModal = ({
     <div
       className={`${
         isHidden ? "hidden" : ""
-      } fixed inset-0 bg-black bg-opacity-50 justify-center items-center flex`}
+      } fixed inset-0 bg-white bg-opacity-90 justify-center items-center flex z-20`}
     >
-      <div className="bg-white py-7 pl-8 pr-10 rounded-lg w-6/12 relative">
+      <div className="bg-white py-7 pl-8 pr-10 rounded-lg w-6/12 relative shadow-xl">
         <input
           className="w-full mb-5 focus:outline-none bg-transparent text-gray-600 text-lg"
           type="text"

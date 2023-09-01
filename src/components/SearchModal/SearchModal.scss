@@ -14,7 +14,7 @@
     }
     &:hover{
         &::after {
-            background-color: rgb(243, 240, 240);
+            background-color: var(--gray-light);
         }
     }
     &-button {

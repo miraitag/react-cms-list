@@ -1,0 +1,15 @@
+.header-image__xing {
+    max-width: inherit;
+}
+
+.header-image {
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background-color: var(--gray-light);
+    }
+}

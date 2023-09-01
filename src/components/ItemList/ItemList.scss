@@ -3,16 +3,97 @@
     will-change: background-color;
     &:checked {
         + label {
-            background-color: rgb(4, 115, 219);
+            background-color: var(--blue-strong);
             .item-list__name,
             .item-list__specialities,
             .item-list__dayrate,
             .item-list__availability   {
-                color: white;
+                color: var(--white);
             }
             .item-list__specialities {
-                background-color: rgb(4, 132, 252);
+                background-color: var(--blue-medium);
             }
         }
+    }
+}
+
+.item-list__badge {
+    &.tomato{
+        background-color: var(--tomato);
+    }
+    &.orange{
+        background-color: var(--orange);
+    }
+    &.yellow{
+        background-color: var(--yellow);
+    }
+    &.green{
+        background-color: var(--green);
+    }
+    &.cyan{
+        background-color: var(--cyan);
+    }
+    &.blue{
+        background-color: var(--blue);
+    }
+    &.purple{
+        background-color: var(--purple);
+    }
+    &.violet{
+        background-color: var(--violet);
+    }
+    &.indigo{
+        background-color: var(--indigo);
+    }
+    &.aqua{
+        background-color: var(--aqua);
+    }
+    &.khaki{
+        background-color: var(--khaki);
+    }
+    &.lavender{
+        background-color: var(--lavender);
+    }
+    &.maroon{
+        background-color: var(--maroon);
+    }
+    &.navy{
+        background-color: var(--navy);
+    }
+    &.olive{
+        background-color: var(--olive);
+    }
+    &.pink{
+        background-color: var(--pink);
+    }
+    &.coral{
+        background-color: var(--coral);
+    }
+    &.red{
+        background-color: var(--red);
+    }
+    &.silver{
+        background-color: var(--silver);
+    }
+    &.tan{
+        background-color: var(--tan);
+    }
+    &.teal{
+        background-color: var(--teal);
+    }
+    &.violet{
+        background-color: var(--violet);
+    }
+    &.wheat{
+        background-color: var(--wheat);
+    }
+    &.coral{
+        background-color: var(--coral);
+    }
+    &.yellow{
+        background-color: var(--yellow);
+    }
+    &.azure{
+        background-color: var(--azure);
     }
 }

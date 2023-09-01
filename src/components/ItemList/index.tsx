@@ -1,4 +1,6 @@
 import { IUser } from "../../interfaces/user.interface";
+import { colorCapitalize } from "../../util/colorCapitalize";
+import { currency } from "../../util/currency";
 import "./ItemList.scss";
 
 interface IItemListProps {
@@ -20,7 +22,7 @@ export const ItemList = ({ user }: IItemListProps) => {
       >
         {/* FullName */}
         <div className="w-2/4 flex items-center">
-          <div className="w-7 h-7 bg-slate-500 flex items-center justify-center rounded-lg text-white">
+          <div className={`item-list__badge w-7 h-7 flex items-center justify-center rounded-lg text-white ${colorCapitalize[user.firstname.slice(0, 1)]}`}>
             {user.firstname.slice(0, 1)}
           </div>
           <p className="item-list__name ml-3 text-base text-black">
@@ -43,7 +45,7 @@ export const ItemList = ({ user }: IItemListProps) => {
 
         {/* Day Rate */}
         <p className="item-list__dayrate w-1/4 flex items-center text-base text-black">
-          $ 300,000
+          { currency(300000.555, "$", 2)}
         </p>
 
         {/* Availability */}

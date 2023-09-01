@@ -1,0 +1,11 @@
+.nav_link {
+    &.active {
+        border: {
+            style: solid;
+            bottom: {
+                width: 1px;
+                color: var(--black) !important;
+            }
+        }
+    }
+}

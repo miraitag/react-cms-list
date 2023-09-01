@@ -13,7 +13,7 @@ const interceptorResponse = (response: AxiosResponse): AxiosResponse => {
  * Axios instance for TDC endpoints.
  */
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API,
+  baseURL: import.meta.env.VITE_BASE_URL,
 });
 
 api.interceptors.response.use(interceptorResponse);
